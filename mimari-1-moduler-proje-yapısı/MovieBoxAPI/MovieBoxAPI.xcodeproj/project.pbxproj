@@ -11,7 +11,6 @@
 		57B690CF2867BF14008181B6 /* MovieBoxAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B690CE2867BF14008181B6 /* MovieBoxAPIClient.swift */; };
 		57B690D72867BFAE008181B6 /* MovieBoxAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B690D62867BFAE008181B6 /* MovieBoxAPITests.swift */; };
 		57B690D82867BFAE008181B6 /* MovieBoxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B690C42867BE13008181B6 /* MovieBoxAPI.framework */; };
-		57B690EE2867D36D008181B6 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B690ED2867D36D008181B6 /* Alamofire.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +29,6 @@
 		57B690CE2867BF14008181B6 /* MovieBoxAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBoxAPIClient.swift; sourceTree = "<group>"; };
 		57B690D42867BFAE008181B6 /* MovieBoxAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieBoxAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B690D62867BFAE008181B6 /* MovieBoxAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBoxAPITests.swift; sourceTree = "<group>"; };
-		57B690ED2867D36D008181B6 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = ../Vendor/Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +36,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57B690EE2867D36D008181B6 /* Alamofire.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +55,6 @@
 			children = (
 				57B690C62867BE13008181B6 /* MovieBoxAPI */,
 				57B690D52867BFAE008181B6 /* MovieBoxAPITests */,
-				57B690EC2867D102008181B6 /* Frameworks */,
 				57B690C52867BE13008181B6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,14 +83,6 @@
 				57B690D62867BFAE008181B6 /* MovieBoxAPITests.swift */,
 			);
 			path = MovieBoxAPITests;
-			sourceTree = "<group>";
-		};
-		57B690EC2867D102008181B6 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				57B690ED2867D36D008181B6 /* Alamofire.xcframework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -361,7 +349,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Vendor/Carthage/Build/";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -392,7 +380,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = "$(SRCROOT)/../Vendor/Carthage/Build/";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
