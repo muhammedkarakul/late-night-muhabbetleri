@@ -13,7 +13,40 @@
 		57B690AE2867BC08008181B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B690AC2867BC08008181B6 /* Main.storyboard */; };
 		57B690B02867BC0B008181B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B690AF2867BC0B008181B6 /* Assets.xcassets */; };
 		57B690B32867BC0B008181B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B690B12867BC0B008181B6 /* LaunchScreen.storyboard */; };
+		57B690E92867C201008181B6 /* MovieBoxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B690E52867C1D1008181B6 /* MovieBoxAPI.framework */; };
+		57B690EA2867C201008181B6 /* MovieBoxAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57B690E52867C1D1008181B6 /* MovieBoxAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		57B690E42867C1D1008181B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57B690DF2867C1D1008181B6 /* MovieBoxAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57B690C42867BE13008181B6;
+			remoteInfo = MovieBoxAPI;
+		};
+		57B690E62867C1D1008181B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 57B690DF2867C1D1008181B6 /* MovieBoxAPI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57B690D42867BFAE008181B6;
+			remoteInfo = MovieBoxAPITests;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		57B690EB2867C202008181B6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				57B690EA2867C201008181B6 /* MovieBoxAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		57B690A32867BC08008181B6 /* MovieBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +57,7 @@
 		57B690AF2867BC0B008181B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57B690B22867BC0B008181B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57B690B42867BC0B008181B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57B690DF2867C1D1008181B6 /* MovieBoxAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MovieBoxAPI.xcodeproj; path = ../MovieBoxAPI/MovieBoxAPI.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B690E92867C201008181B6 /* MovieBoxAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +75,10 @@
 		57B6909A2867BC08008181B6 = {
 			isa = PBXGroup;
 			children = (
+				57B690DE2867C1B1008181B6 /* Vendor */,
 				57B690A52867BC08008181B6 /* MovieBox */,
 				57B690A42867BC08008181B6 /* Products */,
+				57B690E82867C201008181B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +104,30 @@
 			path = MovieBox;
 			sourceTree = "<group>";
 		};
+		57B690DE2867C1B1008181B6 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				57B690DF2867C1D1008181B6 /* MovieBoxAPI.xcodeproj */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		57B690E02867C1D1008181B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				57B690E52867C1D1008181B6 /* MovieBoxAPI.framework */,
+				57B690E72867C1D1008181B6 /* MovieBoxAPITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		57B690E82867C201008181B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +138,7 @@
 				57B6909F2867BC08008181B6 /* Sources */,
 				57B690A02867BC08008181B6 /* Frameworks */,
 				57B690A12867BC08008181B6 /* Resources */,
+				57B690EB2867C202008181B6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -113,12 +175,35 @@
 			mainGroup = 57B6909A2867BC08008181B6;
 			productRefGroup = 57B690A42867BC08008181B6 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 57B690E02867C1D1008181B6 /* Products */;
+					ProjectRef = 57B690DF2867C1D1008181B6 /* MovieBoxAPI.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				57B690A22867BC08008181B6 /* MovieBox */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		57B690E52867C1D1008181B6 /* MovieBoxAPI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MovieBoxAPI.framework;
+			remoteRef = 57B690E42867C1D1008181B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		57B690E72867C1D1008181B6 /* MovieBoxAPITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = MovieBoxAPITests.xctest;
+			remoteRef = 57B690E62867C1D1008181B6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		57B690A12867BC08008181B6 /* Resources */ = {
