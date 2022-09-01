@@ -6,14 +6,18 @@
 //
 
 import UIKit
+import MovieBoxAPI
 
 class ViewController: UIViewController {
 
+    let service: TopPodcastServiceProtocol = TopPodcastService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        service.fetchTopPodcast { result in
+            print(result)
+        }
+        
     }
-
-
 }
 

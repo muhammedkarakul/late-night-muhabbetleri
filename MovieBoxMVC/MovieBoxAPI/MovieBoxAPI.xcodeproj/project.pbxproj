@@ -8,9 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		574407442867D82A0096FC13 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574407432867D82A0096FC13 /* Alamofire.xcframework */; };
+		57638C8B28706A24006811C8 /* TopPodcastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57638C8A28706A24006811C8 /* TopPodcastResponse.swift */; };
+		57638C8D28706BDA006811C8 /* TopPodcastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57638C8C28706BDA006811C8 /* TopPodcastService.swift */; };
+		57638C8F28706DCE006811C8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57638C8E28706DCE006811C8 /* Result.swift */; };
+		5782D7512867D9E20066AE67 /* Alamofire.xcframework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 574407432867D82A0096FC13 /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5782D7542868EE390066AE67 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782D7532868EE390066AE67 /* Podcast.swift */; };
+		5782D7562868F6820066AE67 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782D7552868F6820066AE67 /* Genre.swift */; };
+		5782D7582868F8080066AE67 /* PodcastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782D7572868F8080066AE67 /* PodcastTests.swift */; };
+		5782D75B2868F8C20066AE67 /* Decoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782D75A2868F8C20066AE67 /* Decoders.swift */; };
+		5782D75E2868FFF70066AE67 /* podcast.json in Resources */ = {isa = PBXBuildFile; fileRef = 5782D75D2868FD2B0066AE67 /* podcast.json */; };
 		57B690C82867BE13008181B6 /* MovieBoxAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 57B690C72867BE13008181B6 /* MovieBoxAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57B690CF2867BF14008181B6 /* MovieBoxAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B690CE2867BF14008181B6 /* MovieBoxAPIClient.swift */; };
-		57B690D72867BFAE008181B6 /* MovieBoxAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B690D62867BFAE008181B6 /* MovieBoxAPITests.swift */; };
 		57B690D82867BFAE008181B6 /* MovieBoxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B690C42867BE13008181B6 /* MovieBoxAPI.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,13 +31,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5782D7502867D9BA0066AE67 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5782D7512867D9E20066AE67 /* Alamofire.xcframework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		574407432867D82A0096FC13 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = ../Vendor/Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
+		57638C8A28706A24006811C8 /* TopPodcastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPodcastResponse.swift; sourceTree = "<group>"; };
+		57638C8C28706BDA006811C8 /* TopPodcastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPodcastService.swift; sourceTree = "<group>"; };
+		57638C8E28706DCE006811C8 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		5782D7532868EE390066AE67 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		5782D7552868F6820066AE67 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
+		5782D7572868F8080066AE67 /* PodcastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastTests.swift; sourceTree = "<group>"; };
+		5782D75A2868F8C20066AE67 /* Decoders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoders.swift; sourceTree = "<group>"; };
+		5782D75D2868FD2B0066AE67 /* podcast.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = podcast.json; sourceTree = "<group>"; };
 		57B690C42867BE13008181B6 /* MovieBoxAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MovieBoxAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B690C72867BE13008181B6 /* MovieBoxAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieBoxAPI.h; sourceTree = "<group>"; };
-		57B690CE2867BF14008181B6 /* MovieBoxAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBoxAPIClient.swift; sourceTree = "<group>"; };
 		57B690D42867BFAE008181B6 /* MovieBoxAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieBoxAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		57B690D62867BFAE008181B6 /* MovieBoxAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBoxAPITests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +88,40 @@
 			name = Framework;
 			sourceTree = "<group>";
 		};
+		57638C89287069E0006811C8 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				57638C8A28706A24006811C8 /* TopPodcastResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		5782D7522868EE100066AE67 /* DataTransferObjects */ = {
+			isa = PBXGroup;
+			children = (
+				5782D7532868EE390066AE67 /* Podcast.swift */,
+				5782D7552868F6820066AE67 /* Genre.swift */,
+			);
+			path = DataTransferObjects;
+			sourceTree = "<group>";
+		};
+		5782D7592868F8B60066AE67 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5782D75A2868F8C20066AE67 /* Decoders.swift */,
+				57638C8E28706DCE006811C8 /* Result.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		5782D75C2868FCE40066AE67 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5782D75D2868FD2B0066AE67 /* podcast.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		57B690BA2867BE13008181B6 = {
 			isa = PBXGroup;
 			children = (
@@ -83,8 +144,11 @@
 		57B690C62867BE13008181B6 /* MovieBoxAPI */ = {
 			isa = PBXGroup;
 			children = (
+				57638C89287069E0006811C8 /* Responses */,
+				5782D7592868F8B60066AE67 /* Helpers */,
+				5782D7522868EE100066AE67 /* DataTransferObjects */,
 				57B690C72867BE13008181B6 /* MovieBoxAPI.h */,
-				57B690CE2867BF14008181B6 /* MovieBoxAPIClient.swift */,
+				57638C8C28706BDA006811C8 /* TopPodcastService.swift */,
 			);
 			path = MovieBoxAPI;
 			sourceTree = "<group>";
@@ -92,7 +156,8 @@
 		57B690D52867BFAE008181B6 /* MovieBoxAPITests */ = {
 			isa = PBXGroup;
 			children = (
-				57B690D62867BFAE008181B6 /* MovieBoxAPITests.swift */,
+				5782D75C2868FCE40066AE67 /* Resources */,
+				5782D7572868F8080066AE67 /* PodcastTests.swift */,
 			);
 			path = MovieBoxAPITests;
 			sourceTree = "<group>";
@@ -119,6 +184,7 @@
 				57B690C02867BE13008181B6 /* Sources */,
 				57B690C12867BE13008181B6 /* Frameworks */,
 				57B690C22867BE13008181B6 /* Resources */,
+				5782D7502867D9BA0066AE67 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -163,6 +229,7 @@
 					};
 					57B690D32867BFAE008181B6 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -197,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5782D75E2868FFF70066AE67 /* podcast.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,7 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57B690CF2867BF14008181B6 /* MovieBoxAPIClient.swift in Sources */,
+				57638C8F28706DCE006811C8 /* Result.swift in Sources */,
+				5782D75B2868F8C20066AE67 /* Decoders.swift in Sources */,
+				57638C8D28706BDA006811C8 /* TopPodcastService.swift in Sources */,
+				5782D7542868EE390066AE67 /* Podcast.swift in Sources */,
+				5782D7562868F6820066AE67 /* Genre.swift in Sources */,
+				57638C8B28706A24006811C8 /* TopPodcastResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,7 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57B690D72867BFAE008181B6 /* MovieBoxAPITests.swift in Sources */,
+				5782D7582868F8080066AE67 /* PodcastTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,14 +487,22 @@
 		57B690DC2867BFAE008181B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9L7298S5LR;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.muhammedkarakul.MovieBoxAPITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -430,10 +511,17 @@
 		57B690DD2867BFAE008181B6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9L7298S5LR;
 				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.muhammedkarakul.MovieBoxAPITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
