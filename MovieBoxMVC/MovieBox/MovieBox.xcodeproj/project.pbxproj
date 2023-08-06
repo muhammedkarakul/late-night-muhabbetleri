@@ -8,13 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		57B690A72867BC08008181B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B690A62867BC08008181B6 /* AppDelegate.swift */; };
-		57B690A92867BC08008181B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B690A82867BC08008181B6 /* SceneDelegate.swift */; };
-		57B690AB2867BC08008181B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B690AA2867BC08008181B6 /* ViewController.swift */; };
-		57B690AE2867BC08008181B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B690AC2867BC08008181B6 /* Main.storyboard */; };
 		57B690B02867BC0B008181B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B690AF2867BC0B008181B6 /* Assets.xcassets */; };
 		57B690B32867BC0B008181B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B690B12867BC0B008181B6 /* LaunchScreen.storyboard */; };
 		57B690E92867C201008181B6 /* MovieBoxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B690E52867C1D1008181B6 /* MovieBoxAPI.framework */; };
 		57B690EA2867C201008181B6 /* MovieBoxAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57B690E52867C1D1008181B6 /* MovieBoxAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		829BC1542A8044C70073036C /* PodcastListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BC1532A8044C70073036C /* PodcastListContract.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,13 +49,11 @@
 /* Begin PBXFileReference section */
 		57B690A32867BC08008181B6 /* MovieBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B690A62867BC08008181B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		57B690A82867BC08008181B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		57B690AA2867BC08008181B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		57B690AD2867BC08008181B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57B690AF2867BC0B008181B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57B690B22867BC0B008181B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57B690B42867BC0B008181B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57B690DF2867C1D1008181B6 /* MovieBoxAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MovieBoxAPI.xcodeproj; path = ../MovieBoxAPI/MovieBoxAPI.xcodeproj; sourceTree = "<group>"; };
+		829BC1532A8044C70073036C /* PodcastListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastListContract.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,13 +89,10 @@
 		57B690A52867BC08008181B6 /* MovieBox */ = {
 			isa = PBXGroup;
 			children = (
-				57B690A62867BC08008181B6 /* AppDelegate.swift */,
-				57B690A82867BC08008181B6 /* SceneDelegate.swift */,
-				57B690AA2867BC08008181B6 /* ViewController.swift */,
-				57B690AC2867BC08008181B6 /* Main.storyboard */,
-				57B690AF2867BC0B008181B6 /* Assets.xcassets */,
-				57B690B12867BC0B008181B6 /* LaunchScreen.storyboard */,
-				57B690B42867BC0B008181B6 /* Info.plist */,
+				829BC14C2A8044540073036C /* App */,
+				829BC1512A8044970073036C /* Scenes */,
+				829BC14F2A8044770073036C /* Resources */,
+				829BC1502A8044820073036C /* Supporting Files */,
 			);
 			path = MovieBox;
 			sourceTree = "<group>";
@@ -126,6 +119,47 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		829BC14C2A8044540073036C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				57B690A62867BC08008181B6 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		829BC14F2A8044770073036C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				57B690AF2867BC0B008181B6 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		829BC1502A8044820073036C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				57B690B12867BC0B008181B6 /* LaunchScreen.storyboard */,
+				57B690B42867BC0B008181B6 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		829BC1512A8044970073036C /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				829BC1522A8044A90073036C /* PodcastList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		829BC1522A8044A90073036C /* PodcastList */ = {
+			isa = PBXGroup;
+			children = (
+				829BC1532A8044C70073036C /* PodcastListContract.swift */,
+			);
+			path = PodcastList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +246,6 @@
 			files = (
 				57B690B32867BC0B008181B6 /* LaunchScreen.storyboard in Resources */,
 				57B690B02867BC0B008181B6 /* Assets.xcassets in Resources */,
-				57B690AE2867BC08008181B6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,23 +256,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57B690AB2867BC08008181B6 /* ViewController.swift in Sources */,
+				829BC1542A8044C70073036C /* PodcastListContract.swift in Sources */,
 				57B690A72867BC08008181B6 /* AppDelegate.swift in Sources */,
-				57B690A92867BC08008181B6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		57B690AC2867BC08008181B6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				57B690AD2867BC08008181B6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		57B690B12867BC0B008181B6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -374,10 +398,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9L7298S5LR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MovieBox/Info.plist;
+				INFOPLIST_FILE = "MovieBox/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -402,10 +425,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 9L7298S5LR;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MovieBox/Info.plist;
+				INFOPLIST_FILE = "MovieBox/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
