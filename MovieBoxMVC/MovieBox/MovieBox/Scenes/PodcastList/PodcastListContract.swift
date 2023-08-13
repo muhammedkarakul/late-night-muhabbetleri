@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+protocol PodcastListViewProtocol {
+    func updatePodcastList(_ podcastList: [PodcastPresentation])
+    func setLoading(_ isLoading: Bool)
+}

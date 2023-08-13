@@ -8,7 +8,7 @@
 import Foundation
 
 public struct TopPodcastResponse: Decodable {
-    let results: [Podcast]
+    public let results: [Podcast]
     
     private enum RootCodingKeys: String, CodingKey {
         case feed

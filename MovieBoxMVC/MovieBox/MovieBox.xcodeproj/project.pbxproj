@@ -13,6 +13,13 @@
 		57B690E92867C201008181B6 /* MovieBoxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B690E52867C1D1008181B6 /* MovieBoxAPI.framework */; };
 		57B690EA2867C201008181B6 /* MovieBoxAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 57B690E52867C1D1008181B6 /* MovieBoxAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		829BC1542A8044C70073036C /* PodcastListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BC1532A8044C70073036C /* PodcastListContract.swift */; };
+		829BC1562A87C4040073036C /* PodcastList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 829BC1552A87C4040073036C /* PodcastList.storyboard */; };
+		829BC1582A87C9C20073036C /* PodcastListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BC1572A87C9C20073036C /* PodcastListView.swift */; };
+		829BC15A2A87CBE50073036C /* PodcastListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BC1592A87CBE50073036C /* PodcastListViewController.swift */; };
+		829BC15C2A87D68B0073036C /* PodcastPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BC15B2A87D68B0073036C /* PodcastPresentation.swift */; };
+		829BC15E2A8935F10073036C /* AppContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BC15D2A8935F10073036C /* AppContainer.swift */; };
+		829BC1602A8935FA0073036C /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BC15F2A8935FA0073036C /* AppRouter.swift */; };
+		829BC1632A893A980073036C /* PodcastListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829BC1622A893A980073036C /* PodcastListBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +61,13 @@
 		57B690B42867BC0B008181B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		57B690DF2867C1D1008181B6 /* MovieBoxAPI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MovieBoxAPI.xcodeproj; path = ../MovieBoxAPI/MovieBoxAPI.xcodeproj; sourceTree = "<group>"; };
 		829BC1532A8044C70073036C /* PodcastListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastListContract.swift; sourceTree = "<group>"; };
+		829BC1552A87C4040073036C /* PodcastList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PodcastList.storyboard; sourceTree = "<group>"; };
+		829BC1572A87C9C20073036C /* PodcastListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastListView.swift; sourceTree = "<group>"; };
+		829BC1592A87CBE50073036C /* PodcastListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastListViewController.swift; sourceTree = "<group>"; };
+		829BC15B2A87D68B0073036C /* PodcastPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastPresentation.swift; sourceTree = "<group>"; };
+		829BC15D2A8935F10073036C /* AppContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppContainer.swift; sourceTree = "<group>"; };
+		829BC15F2A8935FA0073036C /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		829BC1622A893A980073036C /* PodcastListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastListBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +139,8 @@
 			isa = PBXGroup;
 			children = (
 				57B690A62867BC08008181B6 /* AppDelegate.swift */,
+				829BC15D2A8935F10073036C /* AppContainer.swift */,
+				829BC15F2A8935FA0073036C /* AppRouter.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -158,6 +174,11 @@
 			isa = PBXGroup;
 			children = (
 				829BC1532A8044C70073036C /* PodcastListContract.swift */,
+				829BC1552A87C4040073036C /* PodcastList.storyboard */,
+				829BC1572A87C9C20073036C /* PodcastListView.swift */,
+				829BC1592A87CBE50073036C /* PodcastListViewController.swift */,
+				829BC15B2A87D68B0073036C /* PodcastPresentation.swift */,
+				829BC1622A893A980073036C /* PodcastListBuilder.swift */,
 			);
 			path = PodcastList;
 			sourceTree = "<group>";
@@ -245,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57B690B32867BC0B008181B6 /* LaunchScreen.storyboard in Resources */,
+				829BC1562A87C4040073036C /* PodcastList.storyboard in Resources */,
 				57B690B02867BC0B008181B6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,7 +279,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				829BC1542A8044C70073036C /* PodcastListContract.swift in Sources */,
+				829BC1582A87C9C20073036C /* PodcastListView.swift in Sources */,
 				57B690A72867BC08008181B6 /* AppDelegate.swift in Sources */,
+				829BC15C2A87D68B0073036C /* PodcastPresentation.swift in Sources */,
+				829BC1632A893A980073036C /* PodcastListBuilder.swift in Sources */,
+				829BC1602A8935FA0073036C /* AppRouter.swift in Sources */,
+				829BC15A2A87CBE50073036C /* PodcastListViewController.swift in Sources */,
+				829BC15E2A8935F10073036C /* AppContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
