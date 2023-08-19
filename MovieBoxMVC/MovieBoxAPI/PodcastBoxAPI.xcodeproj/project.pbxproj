@@ -7,18 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		574407442867D82A0096FC13 /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 574407432867D82A0096FC13 /* Alamofire.xcframework */; };
 		57638C8B28706A24006811C8 /* TopPodcastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57638C8A28706A24006811C8 /* TopPodcastResponse.swift */; };
 		57638C8D28706BDA006811C8 /* TopPodcastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57638C8C28706BDA006811C8 /* TopPodcastService.swift */; };
 		57638C8F28706DCE006811C8 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57638C8E28706DCE006811C8 /* Result.swift */; };
-		5782D7512867D9E20066AE67 /* Alamofire.xcframework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 574407432867D82A0096FC13 /* Alamofire.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5782D7542868EE390066AE67 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782D7532868EE390066AE67 /* Podcast.swift */; };
 		5782D7562868F6820066AE67 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782D7552868F6820066AE67 /* Genre.swift */; };
 		5782D7582868F8080066AE67 /* PodcastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782D7572868F8080066AE67 /* PodcastTests.swift */; };
 		5782D75B2868F8C20066AE67 /* Decoders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5782D75A2868F8C20066AE67 /* Decoders.swift */; };
 		5782D75E2868FFF70066AE67 /* podcast.json in Resources */ = {isa = PBXBuildFile; fileRef = 5782D75D2868FD2B0066AE67 /* podcast.json */; };
 		57B690C82867BE13008181B6 /* MovieBoxAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 57B690C72867BE13008181B6 /* MovieBoxAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57B690D82867BFAE008181B6 /* MovieBoxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B690C42867BE13008181B6 /* MovieBoxAPI.framework */; };
+		57B690D82867BFAE008181B6 /* PodcastBoxAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B690C42867BE13008181B6 /* PodcastBoxAPI.framework */; };
+		82DE47E12A90BE3200F0F2AB /* Alamofire.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82DE47E02A90BE3100F0F2AB /* Alamofire.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +37,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5782D7512867D9E20066AE67 /* Alamofire.xcframework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -46,7 +44,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		574407432867D82A0096FC13 /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = ../Vendor/Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
 		57638C8A28706A24006811C8 /* TopPodcastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPodcastResponse.swift; sourceTree = "<group>"; };
 		57638C8C28706BDA006811C8 /* TopPodcastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopPodcastService.swift; sourceTree = "<group>"; };
 		57638C8E28706DCE006811C8 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -55,9 +52,10 @@
 		5782D7572868F8080066AE67 /* PodcastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastTests.swift; sourceTree = "<group>"; };
 		5782D75A2868F8C20066AE67 /* Decoders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoders.swift; sourceTree = "<group>"; };
 		5782D75D2868FD2B0066AE67 /* podcast.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = podcast.json; sourceTree = "<group>"; };
-		57B690C42867BE13008181B6 /* MovieBoxAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MovieBoxAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57B690C42867BE13008181B6 /* PodcastBoxAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PodcastBoxAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B690C72867BE13008181B6 /* MovieBoxAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MovieBoxAPI.h; sourceTree = "<group>"; };
-		57B690D42867BFAE008181B6 /* MovieBoxAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieBoxAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		57B690D42867BFAE008181B6 /* PodcastBoxAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PodcastBoxAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		82DE47E02A90BE3100F0F2AB /* Alamofire.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Alamofire.xcframework; path = ../Vendor/Carthage/Build/Alamofire.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				574407442867D82A0096FC13 /* Alamofire.xcframework in Frameworks */,
+				82DE47E12A90BE3200F0F2AB /* Alamofire.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57B690D82867BFAE008181B6 /* MovieBoxAPI.framework in Frameworks */,
+				57B690D82867BFAE008181B6 /* PodcastBoxAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,7 +81,7 @@
 		574407422867D8150096FC13 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				574407432867D82A0096FC13 /* Alamofire.xcframework */,
+				82DE47E02A90BE3100F0F2AB /* Alamofire.xcframework */,
 			);
 			name = Framework;
 			sourceTree = "<group>";
@@ -135,8 +133,8 @@
 		57B690C52867BE13008181B6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				57B690C42867BE13008181B6 /* MovieBoxAPI.framework */,
-				57B690D42867BFAE008181B6 /* MovieBoxAPITests.xctest */,
+				57B690C42867BE13008181B6 /* PodcastBoxAPI.framework */,
+				57B690D42867BFAE008181B6 /* PodcastBoxAPITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -176,9 +174,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		57B690C32867BE13008181B6 /* MovieBoxAPI */ = {
+		57B690C32867BE13008181B6 /* PodcastBoxAPI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 57B690CB2867BE13008181B6 /* Build configuration list for PBXNativeTarget "MovieBoxAPI" */;
+			buildConfigurationList = 57B690CB2867BE13008181B6 /* Build configuration list for PBXNativeTarget "PodcastBoxAPI" */;
 			buildPhases = (
 				57B690BF2867BE13008181B6 /* Headers */,
 				57B690C02867BE13008181B6 /* Sources */,
@@ -190,14 +188,14 @@
 			);
 			dependencies = (
 			);
-			name = MovieBoxAPI;
+			name = PodcastBoxAPI;
 			productName = MovieBoxAPI;
-			productReference = 57B690C42867BE13008181B6 /* MovieBoxAPI.framework */;
+			productReference = 57B690C42867BE13008181B6 /* PodcastBoxAPI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		57B690D32867BFAE008181B6 /* MovieBoxAPITests */ = {
+		57B690D32867BFAE008181B6 /* PodcastBoxAPITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 57B690DB2867BFAE008181B6 /* Build configuration list for PBXNativeTarget "MovieBoxAPITests" */;
+			buildConfigurationList = 57B690DB2867BFAE008181B6 /* Build configuration list for PBXNativeTarget "PodcastBoxAPITests" */;
 			buildPhases = (
 				57B690D02867BFAE008181B6 /* Sources */,
 				57B690D12867BFAE008181B6 /* Frameworks */,
@@ -208,9 +206,9 @@
 			dependencies = (
 				57B690DA2867BFAE008181B6 /* PBXTargetDependency */,
 			);
-			name = MovieBoxAPITests;
+			name = PodcastBoxAPITests;
 			productName = MovieBoxAPITests;
-			productReference = 57B690D42867BFAE008181B6 /* MovieBoxAPITests.xctest */;
+			productReference = 57B690D42867BFAE008181B6 /* PodcastBoxAPITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -233,7 +231,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 57B690BE2867BE13008181B6 /* Build configuration list for PBXProject "MovieBoxAPI" */;
+			buildConfigurationList = 57B690BE2867BE13008181B6 /* Build configuration list for PBXProject "PodcastBoxAPI" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -246,8 +244,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				57B690C32867BE13008181B6 /* MovieBoxAPI */,
-				57B690D32867BFAE008181B6 /* MovieBoxAPITests */,
+				57B690C32867BE13008181B6 /* PodcastBoxAPI */,
+				57B690D32867BFAE008181B6 /* PodcastBoxAPITests */,
 			);
 		};
 /* End PBXProject section */
@@ -297,7 +295,7 @@
 /* Begin PBXTargetDependency section */
 		57B690DA2867BFAE008181B6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 57B690C32867BE13008181B6 /* MovieBoxAPI */;
+			target = 57B690C32867BE13008181B6 /* PodcastBoxAPI */;
 			targetProxy = 57B690D92867BFAE008181B6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -534,7 +532,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		57B690BE2867BE13008181B6 /* Build configuration list for PBXProject "MovieBoxAPI" */ = {
+		57B690BE2867BE13008181B6 /* Build configuration list for PBXProject "PodcastBoxAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57B690C92867BE13008181B6 /* Debug */,
@@ -543,7 +541,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57B690CB2867BE13008181B6 /* Build configuration list for PBXNativeTarget "MovieBoxAPI" */ = {
+		57B690CB2867BE13008181B6 /* Build configuration list for PBXNativeTarget "PodcastBoxAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57B690CC2867BE13008181B6 /* Debug */,
@@ -552,7 +550,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		57B690DB2867BFAE008181B6 /* Build configuration list for PBXNativeTarget "MovieBoxAPITests" */ = {
+		57B690DB2867BFAE008181B6 /* Build configuration list for PBXNativeTarget "PodcastBoxAPITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				57B690DC2867BFAE008181B6 /* Debug */,

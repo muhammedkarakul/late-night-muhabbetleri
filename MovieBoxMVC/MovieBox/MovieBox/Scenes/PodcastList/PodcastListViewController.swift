@@ -9,8 +9,13 @@ import UIKit
 import MovieBoxAPI
 
 final class PodcastListViewController: UIViewController {
-    @IBOutlet private weak var customView: PodcastListView!
+    @IBOutlet private weak var customView: PodcastListView! {
+        didSet {
+            customView.delegate = self
+        }
+    }
     var service: TopPodcastServiceProtocol!
+    private var podcastList: [Podcast] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,5 +33,11 @@ final class PodcastListViewController: UIViewController {
                 print(error)
             }
         }
+    }
+}
+
+extension PodcastListViewController: PodcastListViewDelegate {
+    func didSelectMovie(at index: Int) {
+        let podcast = podcastList[index]
     }
 }

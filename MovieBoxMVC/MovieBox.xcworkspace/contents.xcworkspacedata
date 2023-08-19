@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:MovieBox/MovieBox.xcodeproj">
+      location = "group:/Users/metekarakul/Development/Mobile/late-night-muhabbetleri/MovieBoxMVC/MovieBox/PodcastBox.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:MovieBoxAPI/MovieBoxAPI.xcodeproj">
+      location = "group:/Users/metekarakul/Development/Mobile/late-night-muhabbetleri/MovieBoxMVC/MovieBoxAPI/PodcastBoxAPI.xcodeproj">
    </FileRef>
 </Workspace>

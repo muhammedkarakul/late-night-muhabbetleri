@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "57B690C32867BE13008181B6"
-               BuildableName = "MovieBoxAPI.framework"
-               BlueprintName = "MovieBoxAPI"
-               ReferencedContainer = "container:MovieBoxAPI.xcodeproj">
+               BuildableName = "PodcastBoxAPI.framework"
+               BlueprintName = "PodcastBoxAPI"
+               ReferencedContainer = "container:PodcastBoxAPI.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "57B690D32867BFAE008181B6"
-               BuildableName = "MovieBoxAPITests.xctest"
-               BlueprintName = "MovieBoxAPITests"
-               ReferencedContainer = "container:MovieBoxAPI.xcodeproj">
+               BuildableName = "PodcastBoxAPITests.xctest"
+               BlueprintName = "PodcastBoxAPITests"
+               ReferencedContainer = "container:PodcastBoxAPI.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "57B690C32867BE13008181B6"
-            BuildableName = "MovieBoxAPI.framework"
-            BlueprintName = "MovieBoxAPI"
-            ReferencedContainer = "container:MovieBoxAPI.xcodeproj">
+            BuildableName = "PodcastBoxAPI.framework"
+            BlueprintName = "PodcastBoxAPI"
+            ReferencedContainer = "container:PodcastBoxAPI.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

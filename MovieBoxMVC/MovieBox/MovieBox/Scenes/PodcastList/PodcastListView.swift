@@ -7,12 +7,9 @@
 
 import UIKit
 
-protocol MovieListViewDelegate {
-    // https://youtu.be/_xizYJV8e1o?t=1726
-}
-
 final class PodcastListView: UIView {
     
+    weak var delegate: PodcastListViewDelegate?
     private var podcastList: [PodcastPresentation] = []
     @IBOutlet private weak var tableView: UITableView!
 }
@@ -44,6 +41,6 @@ extension PodcastListView: UITableViewDataSource {
 
 extension PodcastListView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        // TODO
+        delegate?.didSelectMovie(at: indexPath.row)
     }
 }
