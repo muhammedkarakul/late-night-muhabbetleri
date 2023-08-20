@@ -7,12 +7,12 @@
 
 import Foundation
 
-protocol PodcastListViewProtocol {
+@objc protocol PodcastListViewProtocol {
     var delegate: PodcastListViewDelegate? { get set }
     func updatePodcastList(_ podcastList: [PodcastPresentation])
     func setLoading(_ isLoading: Bool)
 }
 
-protocol PodcastListViewDelegate: AnyObject {
+@objc protocol PodcastListViewDelegate: AnyObject {
     func didSelectMovie(at index: Int)
 }

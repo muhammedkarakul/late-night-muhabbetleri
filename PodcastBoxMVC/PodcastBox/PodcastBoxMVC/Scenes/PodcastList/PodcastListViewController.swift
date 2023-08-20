@@ -9,7 +9,7 @@ import UIKit
 import PodcastBoxAPI
 
 final class PodcastListViewController: UIViewController {
-    @IBOutlet private weak var customView: PodcastListView! {
+    @IBOutlet weak var customView: PodcastListViewProtocol! {
         didSet {
             customView.delegate = self
         }
@@ -20,11 +20,13 @@ final class PodcastListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        title = "Podcasts"
         customView.setLoading(true)
         service.fetchTopPodcast { [weak self] result in
             guard let self = self else {
                 return
             }
+            self.customView.setLoading(false)
             switch result {
             case .success(let value):
                 self.podcastList = value.results

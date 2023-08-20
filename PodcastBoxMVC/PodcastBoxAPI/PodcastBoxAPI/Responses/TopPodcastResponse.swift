@@ -18,6 +18,10 @@ public struct TopPodcastResponse: Decodable {
         case results
     }
     
+    init(result: [Podcast]) {
+        self.results = result
+    }
+    
     public init(from decoder: Decoder) throws {
         let rootContainer = try decoder.container(keyedBy: RootCodingKeys.self)
         let feedContainer = try rootContainer.nestedContainer(keyedBy: FeedCodingKeys.self, forKey: .feed)
