@@ -1,0 +1,15 @@
+{
+    "artistName": "Deniz Dülgeroğlu",
+    "id": "1497612287",
+    "name": "Merdiven Altı Terapi",
+    "kind": "podcasts",
+    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/6e/01/d2/6e01d21c-0750-b0c2-7aa9-504b58bc9517/mza_16606542327422745324.jpg/100x100bb.png",
+    "genres": [
+        {
+            "genreId": "1512",
+            "name": "Health & Fitness",
+            "url": "https://itunes.apple.com/tr/genre/id1512"
+        }
+    ],
+    "url": "https://podcasts.apple.com/tr/podcast/merdiven-alt%C4%B1-terapi/id1497612287"
+}

@@ -1,0 +1,15 @@
+{
+    "artistName": "Podcast BPT",
+    "id": "1549686147",
+    "name": "Ortamlarda Satılacak Bilgi",
+    "kind": "podcasts",
+    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts126/v4/b6/c7/e5/b6c7e506-c754-5cb6-0536-2e2603718577/mza_17538872066657713367.jpg/100x100bb.png",
+    "genres": [
+        {
+            "genreId": "1324",
+            "name": "Society & Culture",
+            "url": "https://itunes.apple.com/tr/genre/id1324"
+        }
+    ],
+    "url": "https://podcasts.apple.com/tr/podcast/ortamlarda-sat%C4%B1lacak-bilgi/id1549686147"
+}

@@ -1,0 +1,21 @@
+
+{
+    "artistName": "Podbee Media",
+    "id": "1677982535",
+    "name": "Psikopatika",
+    "kind": "podcasts",
+    "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts116/v4/21/dc/20/21dc20b7-60bc-33df-fdb3-532f8b3b1582/mza_9986588774077300425.jpeg/100x100bb.png",
+    "genres": [
+        {
+            "genreId": "1512",
+            "name": "Health & Fitness",
+            "url": "https://itunes.apple.com/tr/genre/id1512"
+        },
+        {
+            "genreId": "1304",
+            "name": "Education",
+            "url": "https://itunes.apple.com/tr/genre/id1304"
+        }
+    ],
+    "url": "https://podcasts.apple.com/tr/podcast/psikopatika/id1677982535"
+}
