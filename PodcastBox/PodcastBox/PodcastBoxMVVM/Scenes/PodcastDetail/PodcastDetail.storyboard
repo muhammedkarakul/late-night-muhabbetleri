@@ -12,8 +12,8 @@
         <!--Podcast Detail View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="PodcastDetailViewController" id="Y6W-OH-hqX" customClass="PodcastDetailViewController" customModule="PodcastBox" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="PodcastDetailView" customModule="PodcastBox" customModuleProvider="target">
+                <viewController storyboardIdentifier="PodcastDetailViewController" id="Y6W-OH-hqX" customClass="PodcastDetailViewController" customModule="PodcastBoxMVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="PodcastDetailView" customModule="PodcastBoxMVVM" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -81,14 +81,11 @@
                             <constraint firstItem="sFP-xT-Bd0" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="Kw5-QZ-Kw9"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sFP-xT-Bd0" secondAttribute="trailing" constant="16" id="Qfl-5f-oSP"/>
                         </constraints>
-                        <connections>
-                            <outlet property="artistNameLabel" destination="dN6-Zm-19a" id="zjO-im-6LU"/>
-                            <outlet property="genreLabel" destination="wgI-u4-DEi" id="VuJ-qe-Zju"/>
-                            <outlet property="podcastTitleLabel" destination="oHa-bg-TtV" id="px7-hH-c9N"/>
-                        </connections>
                     </view>
                     <connections>
-                        <outlet property="customView" destination="5EZ-qb-Rvc" id="i6g-Cb-HCy"/>
+                        <outlet property="artistNameLabel" destination="dN6-Zm-19a" id="w1Q-4Z-10d"/>
+                        <outlet property="genreLabel" destination="wgI-u4-DEi" id="hLp-gh-66Q"/>
+                        <outlet property="podcastTitleLabel" destination="oHa-bg-TtV" id="F5q-5B-qUq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

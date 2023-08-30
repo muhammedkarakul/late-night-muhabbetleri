@@ -10,10 +10,10 @@ import PodcastBoxAPI
 
 final class PodcastDetailBuilder {
     
-    static func make(with podcast: Podcast) -> PodcastDetailViewController {
+    static func make(with viewModel: PodcastDetailViewModelProtocol) -> PodcastDetailViewController {
         let storyboard = UIStoryboard(name: "PodcastDetail", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "PodcastDetailViewController") as! PodcastDetailViewController
-        viewController.podcast = podcast
+        viewController.viewModel = viewModel
         return viewController
     }
 }

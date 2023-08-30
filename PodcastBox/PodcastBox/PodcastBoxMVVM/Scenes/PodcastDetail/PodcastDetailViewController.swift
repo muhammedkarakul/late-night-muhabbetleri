@@ -10,16 +10,26 @@ import PodcastBoxAPI
 
 final class PodcastDetailViewController: UIViewController {
     
-    @IBOutlet private weak var customView: PodcastDetailView!
+    @IBOutlet weak var podcastTitleLabel: UILabel!
+    @IBOutlet weak var artistNameLabel: UILabel!
+    @IBOutlet weak var genreLabel: UILabel!
     
-    var podcast: Podcast?
+    var viewModel: PodcastDetailViewModelProtocol! {
+        didSet {
+            viewModel.delegate = self
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let podcast = podcast else {
-            return
-        }
-        let podcastDetailPresentation = PodcastDetailPresentation(podcast: podcast)
-        customView.updatePodcastDetail(podcastDetailPresentation)
+        viewModel.load()
+    }
+}
+
+extension PodcastDetailViewController: PodcastDetailViewModelDelegate {
+    func showDetail(_ presentation: PodcastDetailPresentation) {
+        podcastTitleLabel.text = presentation.title
+        artistNameLabel.text = presentation.artistName
+        genreLabel.text = presentation.genre
     }
 }

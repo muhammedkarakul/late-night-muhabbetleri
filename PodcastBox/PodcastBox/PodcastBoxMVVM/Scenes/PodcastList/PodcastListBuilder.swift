@@ -11,7 +11,8 @@ final class PodcastListBuilder {
     static func make() -> PodcastListViewController {
         let storyboard = UIStoryboard(name: "PodcastList", bundle: nil)
         let viewController = storyboard.instantiateViewController(withIdentifier: "PodcastListViewController") as! PodcastListViewController
-        viewController.service = app.service
+        let viewModel = PodcastListViewModel(service: app.service)
+        viewController.viewModel = viewModel
         return viewController
     }
 }

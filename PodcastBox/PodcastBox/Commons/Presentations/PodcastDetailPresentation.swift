@@ -8,7 +8,7 @@
 import Foundation
 import PodcastBoxAPI
 
-struct PodcastDetailPresentation {
+struct PodcastDetailPresentation: Equatable {
     let title: String
     let artistName: String
     let genre: String

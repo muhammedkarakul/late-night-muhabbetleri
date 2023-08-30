@@ -16,6 +16,8 @@
 		</dict>
 		<key>PodcastBoxMVCTests.xcscheme_^#shared#^_</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
@@ -23,6 +25,34 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
+		</dict>
+		<key>PodcastBoxMVVMTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>57B690A22867BC08008181B6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>820DC2DE2A9F9252008C706E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8241705A2A9BA6F600775C4A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>82966A9C2A9104B4004A593B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

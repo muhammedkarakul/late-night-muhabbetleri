@@ -7,12 +7,23 @@
 
 import Foundation
 
-@objc protocol PodcastListViewProtocol {
-    var delegate: PodcastListViewDelegate? { get set }
-    func updatePodcastList(_ podcastList: [PodcastPresentation])
-    func setLoading(_ isLoading: Bool)
+protocol PodcastListViewModelProtocol {
+    var delegate: PodcastListViewModelDelegate? { get set }
+    func load()
+    func selectPodcast(at index: Int)
 }
 
-@objc protocol PodcastListViewDelegate: AnyObject {
-    func didSelectMovie(at index: Int)
+enum PodcastListViewModelOutput: Equatable {
+    case updateTitle(String)
+    case setLoading(Bool)
+    case showPodcastList([PodcastPresentation])
+}
+
+enum PodcastListViewRoute {
+    case detail(PodcastDetailViewModelProtocol)
+}
+
+protocol PodcastListViewModelDelegate: AnyObject {
+    func handleOutput(_ output: PodcastListViewModelOutput)
+    func navigate(to route: PodcastListViewRoute)
 }

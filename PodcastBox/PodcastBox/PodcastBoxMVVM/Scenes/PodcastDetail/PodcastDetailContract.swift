@@ -7,8 +7,11 @@
 
 import Foundation
 
-protocol PodcastDetailViewDelegate {}
+protocol PodcastDetailViewModelProtocol {
+    var delegate: PodcastDetailViewModelDelegate? { get set }
+    func load()
+}
 
-protocol PodcastDetailViewProtocol {
-    func updatePodcastDetail(_ podcastDetail: PodcastDetailPresentation)
+protocol PodcastDetailViewModelDelegate: AnyObject {
+    func showDetail(_ presentation: PodcastDetailPresentation)
 }

@@ -9,40 +9,62 @@ import UIKit
 import PodcastBoxAPI
 
 final class PodcastListViewController: UIViewController {
-    @IBOutlet weak var customView: PodcastListViewProtocol! {
+    
+    @IBOutlet private weak var tableView: UITableView!
+    
+    var viewModel: PodcastListViewModelProtocol! {
         didSet {
-            customView.delegate = self
+            viewModel.delegate = self
         }
     }
-    var service: TopPodcastServiceProtocol!
-    private var podcastList: [Podcast] = []
+    private var podcastList: [PodcastPresentation] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.load()
+    }
+}
+
+extension PodcastListViewController: PodcastListViewModelDelegate {
+    func handleOutput(_ output: PodcastListViewModelOutput) {
         
-        title = "Podcasts"
-        customView.setLoading(true)
-        service.fetchTopPodcast { [weak self] result in
-            guard let self = self else {
-                return
-            }
-            self.customView.setLoading(false)
-            switch result {
-            case .success(let value):
-                self.podcastList = value.results
-                let podcastPresentations = value.results.map(PodcastPresentation.init)
-                self.customView.updatePodcastList(podcastPresentations)
-            case .failure(let error):
-                print(error)
-            }
+        switch output {
+        case .updateTitle(let title):
+            self.title = title
+        case .setLoading(let isLoading):
+            UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
+        case .showPodcastList(let podcastList):
+            self.podcastList = podcastList
+            tableView.reloadData()
+        }
+    }
+    
+    func navigate(to route: PodcastListViewRoute) {
+        switch route {
+        case .detail(let viewModel):
+            let viewController = PodcastDetailBuilder.make(with: viewModel)
+            show(viewController, sender: nil)
         }
     }
 }
 
-extension PodcastListViewController: PodcastListViewDelegate {
-    func didSelectMovie(at index: Int) {
-        let podcast = podcastList[index]
-        let podcastDetailViewController = PodcastDetailBuilder.make(with: podcast)
-        navigationController?.pushViewController(podcastDetailViewController, animated: true)
+extension PodcastListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.selectPodcast(at: indexPath.row)
+    }
+}
+
+extension PodcastListViewController: UITableViewDataSource {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return podcastList.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PodcastListCell", for: indexPath)
+        let podcast = podcastList[indexPath.row]
+        cell.textLabel?.text = podcast.title
+        cell.detailTextLabel?.text = podcast.detail
+        return cell
     }
 }

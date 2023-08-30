@@ -12,8 +12,8 @@
         <!--Podcast List View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="PodcastListViewController" id="Y6W-OH-hqX" customClass="PodcastListViewController" customModule="MovieBox" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="PodcastListView" customModule="MovieBox" customModuleProvider="target">
+                <viewController storyboardIdentifier="PodcastListViewController" id="Y6W-OH-hqX" customClass="PodcastListViewController" customModule="PodcastBoxMVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="PodcastListView" customModule="PodcastBoxMVVM" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -47,8 +47,8 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="5EZ-qb-Rvc" id="Lul-Er-WcR"/>
-                                    <outlet property="delegate" destination="5EZ-qb-Rvc" id="hsZ-fu-Ni5"/>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="I7J-ao-7Gq"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="oEa-xv-HpH"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -60,12 +60,9 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="rkO-zP-XUx" secondAttribute="bottom" id="aHC-vf-hWz"/>
                             <constraint firstItem="rkO-zP-XUx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="bU0-30-Suu"/>
                         </constraints>
-                        <connections>
-                            <outlet property="tableView" destination="rkO-zP-XUx" id="4uj-jO-lGL"/>
-                        </connections>
                     </view>
                     <connections>
-                        <outlet property="customView" destination="5EZ-qb-Rvc" id="iyt-ks-lXq"/>
+                        <outlet property="tableView" destination="rkO-zP-XUx" id="MUB-eA-73i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
