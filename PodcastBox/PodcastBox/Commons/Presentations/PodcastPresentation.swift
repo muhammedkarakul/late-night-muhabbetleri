@@ -16,6 +16,11 @@ final class PodcastPresentation: NSObject {
         self.title = title
         self.detail = detail
     }
+    
+    override func isEqual(_ object: Any?) -> Bool {
+        guard let other = object as? PodcastPresentation else { return false }
+        return self.title == other.title && self.detail == other.detail
+    }
 }
 
 extension PodcastPresentation {
