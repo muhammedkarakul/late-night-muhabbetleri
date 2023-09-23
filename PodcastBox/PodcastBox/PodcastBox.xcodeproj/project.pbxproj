@@ -405,8 +405,8 @@
 		829176672AADCB3A00A0FF80 /* PodcastBoxVIPER */ = {
 			isa = PBXGroup;
 			children = (
-				829176682AADCB3A00A0FF80 /* Scenes */,
 				829176752AADCB3A00A0FF80 /* App */,
+				829176682AADCB3A00A0FF80 /* Scenes */,
 				829176792AADCB3A00A0FF80 /* Resources */,
 				8291767B2AADCB3A00A0FF80 /* Supporting Files */,
 			);
@@ -416,8 +416,8 @@
 		829176682AADCB3A00A0FF80 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				829176692AADCB3A00A0FF80 /* PodcastDetail */,
 				8291766F2AADCB3A00A0FF80 /* PodcastList */,
+				829176692AADCB3A00A0FF80 /* PodcastDetail */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
